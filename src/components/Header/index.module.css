@@ -1,0 +1,128 @@
+.container {
+    background: bisque;
+    height: 200px;
+    display: flex;
+}
+
+.main_container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header-avatar {
+    display: flex;
+    flex-direction: row;
+}
+.header-avatar img {
+    margin: 10px 0 10px 0;
+    border-radius: 50%;
+}
+
+@media (max-width: 1600px) {
+    .header-avatar img {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 22px;
+}
+@media (max-width: 1600px) {
+    .header-title {
+        font-size: 16px;
+    }
+}
+.header-title_first-symbol {
+    font-weight: 900;
+}
+.header-title_name {
+    font-weight: 300;
+}
+
+.header-links {
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+    align-items: center;
+    font-size: 34px;
+    font-weight: 500;
+}
+@media (max-width: 1600px) {
+    .header-links {
+        column-gap: 40px;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+.header-links_item {
+}
+.header-links_item:hover {
+    text-decoration: underline;
+    opacity: 0.4;
+}
+
+.header-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-contacts_phone {
+    font-size: 28px;
+}
+@media (max-width: 1600px) {
+    .header-contacts_phone {
+        font-size: 16px;
+    }
+}
+
+.header-contacts_social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 20px;
+}
+@media (max-width: 1600px) {
+    .header-contacts_social {
+        column-gap: 20px;
+    }
+}
+.header-contacts_social-vk:hover {
+    opacity: 0.4;
+}
+.header-contacts_social-telegram:hover {
+    opacity: 0.4;
+}
+.header-contacts_social-whatsapp:hover {
+    opacity: 0.4;
+}
+@media (max-width: 1600px) {
+    .header-contacts_social-vk {
+        width: 30px;
+        height: 30px;
+    }
+    .header-contacts_social-telegram {
+        width: 40px;
+        height: 40px;
+    }
+    .header-contacts_social-whatsapp {
+        width: 30px;
+        height: 30px;
+    }
+}
