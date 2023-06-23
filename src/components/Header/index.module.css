@@ -4,7 +4,7 @@
     display: flex;
 }
 
-.main_container {
+.main__container {
     display: flex;
     align-items: center;
     width: 100%;
@@ -18,41 +18,49 @@
     justify-content: space-around;
 }
 
-.header-avatar {
+.header__avatar {
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
-.header-avatar img {
+.header__avatar:hover {
+    opacity: 0.6;
+}
+
+.header__avatar img {
     margin: 10px 0 10px 0;
     border-radius: 50%;
 }
 
 @media (max-width: 1600px) {
-    .header-avatar img {
+    .header__avatar img {
         width: 65px;
         height: 65px;
     }
 }
 
-.header-title {
+.header__avatar__title {
     display: flex;
     align-items: center;
     margin-left: 30px;
     font-size: 22px;
 }
+
 @media (max-width: 1600px) {
-    .header-title {
+    .header__avatar__title {
         font-size: 16px;
     }
 }
-.header-title_first-symbol {
+
+.header__avatar__title--first-symbol {
     font-weight: 900;
 }
-.header-title_name {
+
+.header__avatar__title--name {
     font-weight: 300;
 }
 
-.header-links {
+.header__links {
     display: flex;
     flex-direction: row;
     column-gap: 80px;
@@ -60,69 +68,79 @@
     font-size: 34px;
     font-weight: 500;
 }
+
 @media (max-width: 1600px) {
-    .header-links {
+    .header__links {
         column-gap: 40px;
         align-items: center;
         font-size: 24px;
         font-weight: 500;
     }
 }
-.header-links_item {
+
+.header__links--item {
 }
-.header-links_item:hover {
+
+.header__links--item:hover {
     text-decoration: underline;
     opacity: 0.4;
 }
 
-.header-contacts {
+.header__contacts {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.header-contacts_phone {
+.header__contacts--phone {
     font-size: 28px;
+    font-weight: 300;
 }
+
 @media (max-width: 1600px) {
-    .header-contacts_phone {
+    .header__contacts--phone {
         font-size: 16px;
     }
 }
 
-.header-contacts_social {
+.header__contacts__social {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 10px;
     margin-top: 20px;
 }
+
 @media (max-width: 1600px) {
-    .header-contacts_social {
+    .header__contacts__social {
         column-gap: 20px;
     }
 }
-.header-contacts_social-vk:hover {
+
+.header__contacts__social--vk:hover {
     opacity: 0.4;
 }
-.header-contacts_social-telegram:hover {
+
+.header__contacts__social--telegram:hover {
     opacity: 0.4;
 }
-.header-contacts_social-whatsapp:hover {
+
+.header__contacts__social--whatsapp:hover {
     opacity: 0.4;
 }
-@media (max-width: 1600px) {
-    .header-contacts_social-vk {
-        width: 30px;
-        height: 30px;
-    }
-    .header-contacts_social-telegram {
-        width: 40px;
-        height: 40px;
-    }
-    .header-contacts_social-whatsapp {
-        width: 30px;
-        height: 30px;
-    }
+
+.header__contacts__social--vk {
+    width: 30px;
+    height: 30px;
+}
+
+.header__contacts__social--telegram {
+    width: 40px;
+    height: 40px;
+}
+
+.header__contacts__social--whatsapp {
+    width: 30px;
+    height: 30px;
 }
