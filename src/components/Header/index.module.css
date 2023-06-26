@@ -2,12 +2,13 @@
     background: bisque;
     height: 200px;
     display: flex;
+    justify-content: center;
 }
 
 .main__container {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 1600px;
     margin: 10px;
 }
 

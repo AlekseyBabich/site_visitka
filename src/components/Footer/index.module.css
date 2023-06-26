@@ -2,31 +2,33 @@
 
 .container {
     display: flex;
+    justify-content: center;
     background: bisque;
     height: 400px;
 }
 
 .main__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 10px;
+    width: 1600px;
+    margin: 10px 60px 10px 60px;
 }
 
+
+
 .footer {
+    position: relative;
     width: 100%;
     margin-top: 40px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* ------------------------ left -------------------------------- */
+/* ------------------------ up -------------------------------- */
 
-.footer__left-content {
+.footer__wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 
 }
 
@@ -115,11 +117,8 @@
     height: 30px;
 }
 
-/* ------------------------ center -------------------------------- */
+/* ------------------------ links -------------------------------- */
 
-.footer__center-content {
-
-}
 
 .footer__links {
     height: 120px;
@@ -139,6 +138,12 @@
         font-weight: 500;
     }
 }
+@media (max-width: 1200px) {
+    .footer__links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 .footer__links--item {
 }
@@ -147,27 +152,11 @@
     text-decoration: underline;
     opacity: 0.4;
 }
-.footer__text {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 110px;
-}
-.footer__text p {
-    font-size: 24px;
-    font-weight: 300;
-    opacity: 0.6;
-}
+
 
 
 /* ------------------------ right -------------------------------- */
 
-.footer__right-content {
-
-    display: flex;
-    justify-content: center;
-}
 
 .footer__contacts {
 }
@@ -177,6 +166,7 @@
     align-items: center;
     height: 120px;
 }
+
 .footer__contacts--phone p {
     font-size: 24px;
     font-weight: 500;
@@ -191,8 +181,21 @@
 .footer__contacts__button {
     height: 120px;
     display: flex;
-    align-items: center;
-    margin-left: 60px;
+    align-items: flex-end;
 }
 
 
+.footer__text {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+
+.footer__text p {
+    font-size: 24px;
+    font-weight: 300;
+    opacity: 0.6;
+}
