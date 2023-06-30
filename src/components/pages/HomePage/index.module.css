@@ -1,0 +1,87 @@
+/* ----------------------- wrapper ------------------------- */
+
+.container {
+    display: flex;
+    justify-content: center;
+    background: bisque;
+}
+
+.main__container {
+    width: 1600px;
+}
+
+/* ----------------------- content ------------------------- */
+
+.content {
+    display: flex;
+    flex-direction: row;
+    column-gap: 150px;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+@media (max-width: 1600px) {
+    .content {
+        margin-left: 40px;
+        column-gap: 100px;
+    }
+}
+
+/* ----------------------- foto ------------------------- */
+
+.content__foto {
+}
+
+.content__foto img {
+    border: 8px solid black;
+    position: absolute;
+    margin-left: 100px;
+}
+
+.content__graffiti {
+    border: 8px solid black;
+    width: 510px;
+    height: 695px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+/* ----------------------- body ------------------------- */
+
+.content__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+}
+
+.content__body--title {
+    font-size: 48px;
+    font-weight: 200;
+}
+
+.content__body--name {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.content__body--text {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.content__body__button {
+    margin-top: 100px;
+}
+
+@media (max-width: 1300px) {
+    .content__body--title {
+        font-size: 28px;
+    }
+    .content__body--name {
+        font-size: 48px;
+    }
+    .content__body--text {
+        font-size: 18px;
+    }
+}
