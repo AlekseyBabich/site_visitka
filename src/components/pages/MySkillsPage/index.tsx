@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './index.module.css'
 import {WebDesignSvg} from "../../../components/SvgComponents/WebDesignSvg";
 import {BackendSvg} from "../../../components/SvgComponents/BackendSvg";
 import {FrontendSvg} from "../../../components/SvgComponents/FrontendSvg";
 import {SeoSvg} from "../../../components/SvgComponents/SeoSvg";
+import styles from './index.module.css'
 
 export const MySkillsPage = () => {
     const mockCards = [

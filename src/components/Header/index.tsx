@@ -28,7 +28,7 @@ export const Header = () => {
                             <Link href={ '/skills' }>Skills</Link>
                         </div>
                         <div className={ styles['header__links--item'] }>
-                            <Link href={ '/' }>About</Link>
+                            <Link href={ '/about' }>About</Link>
                         </div>
                         <div className={ styles['header__links--item'] }>
                             <Link href={ '/' }>Portfolio</Link>
