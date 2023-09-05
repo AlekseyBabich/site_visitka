@@ -7,7 +7,7 @@ import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import WestIcon from '@mui/icons-material/West';
 import EastIcon from '@mui/icons-material/East';
 
-const AboutPage = () => {
+export const AboutPage = () => {
 
     const progressCards = [
         {
@@ -95,5 +95,3 @@ const AboutPage = () => {
         </div>
     );
 };
-
-export default AboutPage;

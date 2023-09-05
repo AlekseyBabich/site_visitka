@@ -34,7 +34,7 @@ export const Header = () => {
                             <Link href={ '/' }>Portfolio</Link>
                         </div>
                         <div className={ styles['header__links--item'] }>
-                            <Link href={ '/' }>Contacts</Link>
+                            <Link href={ '/contacts' }>Contacts</Link>
                         </div>
                     </div>
                     <div className={ styles['header__contacts'] }>
