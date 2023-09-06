@@ -71,6 +71,8 @@
 }
 
 .content__body__button {
+    display: flex;
+    justify-content: flex-start;
     margin-top: 100px;
 }
 
