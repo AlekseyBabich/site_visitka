@@ -8,7 +8,6 @@ const About = () => {
         <div>
             <Header/>
             <AboutPage/>
-            <Footer/>
         </div>
     );
 };

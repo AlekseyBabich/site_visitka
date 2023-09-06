@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.module.css'
 import Image from "next/image";
-import Button from "../../UI/Button/index";
+import CustomButton from "../../UI/CustomButton/index";
 
 export const HomePage = () => {
     return (
@@ -26,7 +26,7 @@ export const HomePage = () => {
                                 and required tasts</p>
                         </div>
                         <div className={ styles['content__body__button'] }>
-                            <Button name={'Hire me'} height={70} width={160}/>
+                            <CustomButton name={'Hire me'} height={70} width={160}/>
                         </div>
                     </div>
                 </div>

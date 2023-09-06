@@ -1,9 +1,9 @@
 import React from 'react';
-import { I_Button } from '../../../types/button/index'
+import { I_ButtonProps } from '../../../types/ui/index'
 
 import styles from './index.module.css'
 
-const Button = ( { name, width, height }: I_Button ) => {
+const CustomButton = ( { name, width, height }: I_ButtonProps ) => {
     return (
         <div className={ styles.container }>
             <button className={ styles.button }
@@ -14,4 +14,4 @@ const Button = ( { name, width, height }: I_Button ) => {
     );
 };
 
-export default Button;
+export default CustomButton;

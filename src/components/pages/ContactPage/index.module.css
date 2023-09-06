@@ -2,14 +2,12 @@
     display: flex;
     justify-content: center;
     background: bisque;
-    border: 2px solid black;
 }
 .main__container {
     margin-top: 100px;
     margin-bottom: 100px;
     width: 1600px;
     height: 500px;
-    border: 2px solid black;
 }
 
 /* ----------------------------- title ------------------------------- */
@@ -17,8 +15,75 @@
 .title {
     display: flex;
     justify-content: center;
+    margin-bottom: 140px;
 }
 .title__text {
     font-size: 60px;
     font-weight: 600;
+}
+
+/* ----------------------------- body ---------------------------------- */
+
+.body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20em;
+}
+
+/* ---------------------------- body__info ---------------------------- */
+
+.body__info {
+}
+.body__info--phone {
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+.body__info--email {
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+/* ---------------------------- body__info__social ----------------------- */
+
+.body__info__social {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+}
+.body__info__social--telegram {
+    margin-top: -7px;
+}
+.body__info__social--vk {
+    margin-right: 6px;
+}
+.body__info__social--whatsapp {
+
+}
+
+/* ---------------------------- body__feedback -------------------------- */
+
+.body__feedback {
+}
+.body__feedback__input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.body__feedback__input--email {
+    font-size: 36px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 8px;
+
+}
+.body__feedback__input--name {
+    font-size: 36px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 8px;
+
+}
+.body__feedback__button {
+    margin-top: 50px;
 }

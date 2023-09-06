@@ -1,11 +1,12 @@
 import React from 'react';
 
 import styles from './index.module.css'
-import Button from "../../UI/Button";
 import Link from "next/link";
 import { TelegramSvg } from "../../SvgComponents/TelegramSvg";
 import { VkSvg } from "../../SvgComponents/VkSvg";
 import { WhatsappSvg } from "../../SvgComponents/WhatsappSvg";
+import CustomButton from "../../UI/CustomButton";
+import CustomInput from "../../UI/CustomInput";
 
 export const ContactsPage = () => {
     return (
@@ -28,33 +29,33 @@ export const ContactsPage = () => {
                         </div>
                         <div className={ styles[ 'body__info__social' ] }>
                             <div className={ styles[ 'body__info__social--telegram' ] }>
-                                <Link href={'/'}>
+                                <Link href={ '/' }>
                                     <TelegramSvg/>
                                 </Link>
                             </div>
                             <div className={ styles[ 'body__info__social--vk' ] }>
-                                <Link href={'/'}>
+                                <Link href={ '/' }>
                                     <VkSvg/>
                                 </Link>
                             </div>
                             <div className={ styles[ 'body__info__social--whatsapp' ] }>
-                                <Link href={'/'}>
+                                <Link href={ '/' }>
                                     <WhatsappSvg/>
                                 </Link>
                             </div>
                         </div>
                     </div>
                     <div className={ styles[ 'body__feedback' ] }>
-                        <div className={ styles['body__feedback__input'] }>
-                            <div className={ styles['body__feedback__input--email'] }>
-                                <input type="text" name="" id="" style={{ backgroundColor: "red", width: 400, height: 100} }/>
+                        <div className={ styles[ 'body__feedback__input' ] }>
+                            <div className={ styles[ 'body__feedback__input--email' ] }>
+                                <CustomInput type="text" placeholder={ 'Напишите Ваш email' } width={500} height={36}/>
                             </div>
-                            <div className={ styles['body__feedback__input--name'] }>
-
+                            <div className={ styles[ 'body__feedback__input--name' ] }>
+                                <CustomInput type="text" placeholder={ 'Напишите Ваше имя' } width={500} height={36}/>
                             </div>
                         </div>
-                        <div className={ styles['body__feedback__button']}>
-                            <Button name={'Contact with me'} width={300} height={70}/>
+                        <div className={ styles[ 'body__feedback__button' ] }>
+                            <CustomButton name={ 'Contact with me' } width={ 300 } height={ 70 }/>
                         </div>
                     </div>
                 </div>

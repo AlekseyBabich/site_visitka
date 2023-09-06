@@ -8,7 +8,6 @@ const Contacts = () => {
         <div>
             <Header/>
             <ContactsPage/>
-            <Footer/>
         </div>
     );
 };

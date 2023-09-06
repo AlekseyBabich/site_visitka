@@ -8,7 +8,6 @@ const Skills = () => {
         <div>
             <Header/>
             <MySkillsPage/>
-            <Footer/>
         </div>
     );
 };

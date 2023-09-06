@@ -1,6 +1,5 @@
 .container {
     display: flex;
-    justify-content: center;
 }
 .button {
     font-size: 36px;
@@ -9,6 +8,6 @@
 .button:active {
     opacity: 0.4;
 }
-.container:hover {
+.button:hover {
     background: cadetblue;
 }
