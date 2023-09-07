@@ -6,7 +6,8 @@ import Link from "next/link";
 import {TelegramSvg} from "../SvgComponents/TelegramSvg";
 import {VkSvg} from "../SvgComponents/VkSvg";
 import {WhatsappSvg} from "../SvgComponents/WhatsappSvg";
-import Button from "../UI/Button";
+import Button from "../UI/CustomButton";
+import CustomButton from "../UI/CustomButton";
 
 export const Footer = () => {
     const router = useRouter()
@@ -72,7 +73,11 @@ export const Footer = () => {
 
 
                         <div className={styles['footer__contacts__button']}>
-                            <Button/>
+                            <CustomButton name={'Hire me'}
+                                          width={160}
+                                          height={70}
+                                          path={'/contacts'}
+                            />
                         </div>
 
                     </div>
