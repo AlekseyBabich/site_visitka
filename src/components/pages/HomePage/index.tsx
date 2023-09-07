@@ -26,7 +26,11 @@ export const HomePage = () => {
                                 and required tasts</p>
                         </div>
                         <div className={ styles['content__body__button'] }>
-                            <CustomButton name={'Hire me'} height={70} width={160}/>
+                            <CustomButton name={'Hire me'}
+                                          height={70}
+                                          width={160}
+                                          path={'/contacts'}
+                            />
                         </div>
                     </div>
                 </div>

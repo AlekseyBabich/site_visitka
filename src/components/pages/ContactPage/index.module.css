@@ -28,20 +28,29 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    column-gap: 20em;
 }
 
 /* ---------------------------- body__info ---------------------------- */
 
 .body__info {
+    padding-right: 100px;
+    border-right: 4px solid black;
 }
 .body__info--phone {
     font-size: 36px;
     margin-bottom: 60px;
 }
+.body__info--phone:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
 .body__info--email {
     font-size: 36px;
     margin-bottom: 60px;
+}
+.body__info--email:hover {
+    opacity: 0.6;
+    cursor: pointer;
 }
 
 /* ---------------------------- body__info__social ----------------------- */
@@ -54,16 +63,27 @@
 .body__info__social--telegram {
     margin-top: -7px;
 }
+.body__info__social--telegram:hover {
+    opacity: 0.6;
+}
 .body__info__social--vk {
     margin-right: 6px;
 }
+.body__info__social--vk:hover {
+    opacity: 0.6;
+
+}
 .body__info__social--whatsapp {
 
+}
+.body__info__social--whatsapp:hover {
+    opacity: 0.6;
 }
 
 /* ---------------------------- body__feedback -------------------------- */
 
 .body__feedback {
+    padding-left: 100px;
 }
 .body__feedback__input {
     display: flex;

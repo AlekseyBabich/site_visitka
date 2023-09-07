@@ -2,6 +2,7 @@ export interface I_ButtonProps {
     name?: string
     width?: number
     height?: number
+    path?: string | null
 }
 
 export interface I_InputProps {

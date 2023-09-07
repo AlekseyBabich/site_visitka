@@ -55,7 +55,11 @@ export const ContactsPage = () => {
                             </div>
                         </div>
                         <div className={ styles[ 'body__feedback__button' ] }>
-                            <CustomButton name={ 'Contact with me' } width={ 300 } height={ 70 }/>
+                            <CustomButton name={ 'Contact with me' }
+                                          width={ 300 }
+                                          height={ 70 }
+                                          path={null}
+                            />
                         </div>
                     </div>
                 </div>
