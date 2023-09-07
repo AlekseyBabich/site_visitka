@@ -1,15 +1,27 @@
 .container {
-    background: bisque;
     height: 200px;
     display: flex;
     justify-content: center;
 }
-
+.burger__container {
+    display: none;
+}
 .main__container {
     display: flex;
     align-items: center;
     width: 1600px;
     margin: 10px;
+}
+@media (max-width: 768px) {
+    .burger__container {
+        width: 1600px;
+        display: flex;
+        align-items: center;
+
+    }
+    .main__container {
+        display: none;
+    }
 }
 
 .header {

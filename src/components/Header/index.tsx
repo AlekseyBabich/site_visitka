@@ -6,13 +6,14 @@ import { TelegramSvg } from "../SvgComponents/TelegramSvg";
 import { VkSvg } from "../SvgComponents/VkSvg";
 import { WhatsappSvg } from "../SvgComponents/WhatsappSvg";
 import { useRouter } from "next/navigation";
+import BurgerMenu from "../BurgerMenu";
 
 export const Header = () => {
     const router = useRouter()
 
     return (
         <div className={ styles.container }>
-            <div className={ styles['main__container'] }>
+            <div className={ styles['main__container'] } >
                 <div className={ styles.header }>
                     <div className={ styles['header__avatar'] }
                          onClick={ () => router.push('/') }
@@ -61,6 +62,13 @@ export const Header = () => {
                     </div>
                 </div>
             </div>
+
+            <div className={ styles['burger__container']}>
+                <div className={ styles['burger']}>
+                    <BurgerMenu/>
+                </div>
+            </div>
+
         </div>
     );
 };

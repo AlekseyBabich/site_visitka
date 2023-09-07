@@ -1,0 +1,46 @@
+.container {
+    border: 2px solid black;
+}
+
+.header__avatar {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.header__avatar:hover {
+    opacity: 0.6;
+}
+
+.header__avatar img {
+    margin: 10px 0 10px 0;
+    border-radius: 50%;
+}
+
+@media (max-width: 1600px) {
+    .header__avatar img {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+.header__avatar__title {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 22px;
+}
+
+@media (max-width: 1600px) {
+    .header__avatar__title {
+        font-size: 16px;
+    }
+}
+
+.header__avatar__title--first-symbol {
+    font-weight: 900;
+}
+
+.header__avatar__title--name {
+    font-weight: 300;
+}
