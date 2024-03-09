@@ -25,16 +25,16 @@ export const Header = () => {
                     </div>
                     <div className={ styles['header__links'] }>
                         <div className={ styles['header__links--item'] }>
-                            <Link href={ '/' }>Skills</Link>
+                            <Link href={ '/skills' }>Skills</Link>
                         </div>
                         <div className={ styles['header__links--item'] }>
-                            <Link href={ '/' }>About</Link>
+                            <Link href={ '/about' }>About</Link>
                         </div>
                         <div className={ styles['header__links--item'] }>
                             <Link href={ '/' }>Portfolio</Link>
                         </div>
                         <div className={ styles['header__links--item'] }>
-                            <Link href={ '/' }>Contacts</Link>
+                            <Link href={ '/contacts' }>Contacts</Link>
                         </div>
                     </div>
                     <div className={ styles['header__contacts'] }>

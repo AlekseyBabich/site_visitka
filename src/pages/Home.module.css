@@ -1,32 +1,41 @@
 .container {
 }
+
 .main__container {
     display: flex;
     flex-direction: column;
 }
+
 .header {
     justify-content: flex-start;
 }
+
 .footer {
     justify-content: flex-end;
 }
+
 .content {
 
 }
+
 .content__block {
-width: 100%;
-    height: 2000px;
-    background: aliceblue;
+    width: 100%;
+    margin-bottom: 100px;
+    background: bisque;
 }
+
 .content_block-img {
 
 }
+
 .content_block-text {
 
 }
+
 .content_block-text_name {
 
 }
+
 .content_block-text_desc {
 
 }
