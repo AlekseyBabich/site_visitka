@@ -20,15 +20,8 @@ export default function Home() {
                 <div className={ styles.content }>
                     <div className={ styles['content__block'] }>
                         <HomePage/>
-                        <MySkillsPage/>
-                        <AboutPage/>
-                        <ContactsPage/>
+                        
                     </div>
-                </div>
-
-
-                <div className={ styles.footer }>
-                    <Footer/>
                 </div>
 
             </div>

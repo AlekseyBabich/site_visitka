@@ -13,11 +13,13 @@
 }
 .content__about-me {
     display: flex;
+    justify-content: center;
     flex-direction: row;
 
 }
 .content__about-me__desc {
-    width: 700px;
+    width: 550px;
+   
 }
 .content__about-me__desc--title {
     font-size: 60px;
@@ -37,9 +39,9 @@
     justify-content: flex-end;
     font-size: 35px;
     font-weight: 400;
-    margin-left: 200px;
+    margin-left: 80px;
     margin-top: 40px;
-
+   
 }
 .content__about-me__gallery {
     margin-left: 100px;

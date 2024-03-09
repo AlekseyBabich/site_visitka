@@ -5,7 +5,7 @@ export const SeoSvg = () => {
     const imagePath = require('../../../image/seo.png')
     return (
         <div>
-            <Image src={imagePath} alt={''} width={290} height={290} />
+            <Image src={imagePath} alt={''} width={360} height={360} />
         </div>
     );
 };
