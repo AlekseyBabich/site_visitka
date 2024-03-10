@@ -29,21 +29,6 @@ export const Footer = () => {
                         </div>
 
 
-                        <div className={styles['footer__links']}>
-                            <div className={styles['footer__links--item']}>
-                                <Link href={'/'}>Skills</Link>
-                            </div>
-                            <div className={styles['footer__links--item']}>
-                                <Link href={'/'}>About</Link>
-                            </div>
-                            <div className={styles['footer__links--item']}>
-                                <Link href={'/'}>Portfolio</Link>
-                            </div>
-                            <div className={styles['footer__links--item']}>
-                                <Link href={'/'}>Contacts</Link>
-                            </div>
-                        </div>
-
                         <div className={styles['footer__contacts--phone']}>
                             <p>+7 (913) - 961 - 77 - 41</p>
                         </div>

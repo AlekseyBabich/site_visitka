@@ -7,7 +7,7 @@ import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import WestIcon from '@mui/icons-material/West';
 import EastIcon from '@mui/icons-material/East';
 
-export const AboutPage = () => {
+export const AboutPage = ({id}: any) => {
 
     const progressCards = [
         {
@@ -25,7 +25,7 @@ export const AboutPage = () => {
     ]
 
     return (
-        <div className={styles.container}>
+        <div id={id} className={styles.container}>
             <div className={styles['main__container']}>
                 <div className={styles.content}>
                     <div className={styles['content__about-me']}>

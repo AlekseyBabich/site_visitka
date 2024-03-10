@@ -1,15 +1,20 @@
 .container {
-    background: bisque;
-    height: 200px;
+    background: rgb(252, 217, 175);
+    height: 120px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .main__container {
+    position: fixed;
+    background: rgb(252, 217, 175);
     display: flex;
     align-items: center;
     width: 1600px;
     margin: 10px;
+    z-index: 999;
+
 }
 
 .header {

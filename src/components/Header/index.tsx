@@ -14,6 +14,7 @@ export const Header = () => {
         <div className={ styles.container }>
             <div className={ styles['main__container'] }>
                 <div className={ styles.header }>
+
                     <div className={ styles['header__avatar'] }
                          onClick={ () => router.push('/') }
                     >
@@ -23,20 +24,22 @@ export const Header = () => {
                             <p className={ styles['header__avatar__title--name'] }>eb development</p>
                         </div>
                     </div>
+
                     <div className={ styles['header__links'] }>
                         <div className={ styles['header__links--item'] }>
-                            <Link href={ '/skills' }>Skills</Link>
+                            <Link href='#skills'>Skills</Link>
                         </div>
                         <div className={ styles['header__links--item'] }>
-                            <Link href={ '/about' }>About</Link>
+                            <Link href={ '#about' }>About</Link>
                         </div>
-                        <div className={ styles['header__links--item'] }>
+                        {/* <div className={ styles['header__links--item'] }>
                             <Link href={ '/' }>Portfolio</Link>
-                        </div>
+                        </div> */}
                         <div className={ styles['header__links--item'] }>
-                            <Link href={ '/contacts' }>Contacts</Link>
+                            <Link href={ '#contacts' }>Contacts</Link>
                         </div>
                     </div>
+
                     <div className={ styles['header__contacts'] }>
                         <div className={ styles['header__contacts--phone'] }>
                             <p>+7 (913) - 961 - 77 - 41</p>
@@ -59,6 +62,7 @@ export const Header = () => {
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
