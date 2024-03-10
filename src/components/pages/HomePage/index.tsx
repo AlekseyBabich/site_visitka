@@ -3,9 +3,9 @@ import styles from './index.module.css'
 import Image from "next/image";
 import CustomButton from "../../UI/CustomButton/index";
 
-export const HomePage = () => {
+export const HomePage = ({id}: any) => {
     return (
-        <div className={ styles.container }>
+        <div id={id} className={ styles.container }>
             <div className={ styles['main__container'] }>
 
                 <div className={ styles.content }>

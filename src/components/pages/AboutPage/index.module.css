@@ -9,7 +9,7 @@
 .content {
     display: flex;
     flex-direction: column;
-    margin: 200px 50px 50px 50px;
+    margin: 250px 50px 50px 50px;
 }
 .content__about-me {
     display: flex;

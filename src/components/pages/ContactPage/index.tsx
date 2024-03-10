@@ -8,9 +8,9 @@ import { WhatsappSvg } from "../../SvgComponents/WhatsappSvg";
 import CustomButton from "../../UI/CustomButton";
 import CustomInput from "../../UI/CustomInput";
 
-export const ContactsPage = () => {
+export const ContactsPage = ({id}: any) => {
     return (
-        <div className={ styles.container }>
+        <div id={id} className={ styles.container }>
             <div className={ styles[ 'main__container' ] }>
 
                 <div className={ styles.title }>

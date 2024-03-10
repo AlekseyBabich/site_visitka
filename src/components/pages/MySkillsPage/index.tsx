@@ -5,7 +5,7 @@ import {FrontendSvg} from "../../../components/SvgComponents/FrontendSvg";
 import {SeoSvg} from "../../../components/SvgComponents/SeoSvg";
 import styles from './index.module.css'
 
-export const MySkillsPage = () => {
+export const MySkillsPage = ({id}: any) => {
     const mockCards = [
         {
             path: 'webDesign',
@@ -43,7 +43,7 @@ export const MySkillsPage = () => {
 
 
     return (
-        <div className={styles.container}>
+        <div id={id} className={styles.container}>
             <div className={styles['main__container']}>
 
                 <div className={styles.content}>

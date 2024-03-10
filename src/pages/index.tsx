@@ -6,6 +6,9 @@ import {AboutPage} from "../components/pages/AboutPage";
 import {ContactsPage} from "../components/pages/ContactPage";
 
 import styles from './Home.module.css'
+import BurgerMenu from "../components/UI/BurgerMenu";
+import { useEffect } from "react";
+
 
 export default function Home() {
     return (
@@ -16,12 +19,22 @@ export default function Home() {
                     <Header/>
                 </div>
 
+                {/* <div className={ styles.burger }>
+                    <BurgerMenu/>
+                </div> */}
+
 
                 <div className={ styles.content }>
                     <div className={ styles['content__block'] }>
-                        <HomePage/>
-                        
+                        <HomePage id='home'/>
+                        <MySkillsPage id='skills'/>
+                        <AboutPage id='about'/>
+                        <ContactsPage id='contacts'/>
                     </div>
+                </div>
+
+                <div className={ styles.footer }>
+                    <Footer/>
                 </div>
 
             </div>
