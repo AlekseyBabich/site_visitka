@@ -5,12 +5,13 @@
     background: bisque;
     align-items: center;
     justify-content: center;
+    border-bottom: 5px solid black;
 }
 
 .main__container {
     width: 1400px;
-    margin-bottom: 100px;
-    margin-top: 250px;
+    margin-bottom: 250px;
+    margin-top: 200px;
 }
 
 /* ----------------------- content ------------------------- */

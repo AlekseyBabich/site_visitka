@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     background: bisque;
+    border-bottom: 5px solid black;
 }
 .main__container {
     width: 1600px;
@@ -89,11 +90,14 @@
 .content__my-progress--title {
     font-size: 60px;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
 }
 .content__my-progress__elements-block {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 70px;
 }
 .content__my-progress__elements-block__item {
