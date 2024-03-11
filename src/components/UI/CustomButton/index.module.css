@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    background: rgb(252, 217, 175);
 }
 .button {
     font-size: 36px;

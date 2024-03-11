@@ -19,13 +19,16 @@ export default function Home() {
                     <Header/>
                 </div>
 
-                {/* <div className={ styles.burger }>
-                    <BurgerMenu/>
-                </div> */}
+                
 
 
                 <div className={ styles.content }>
                     <div className={ styles['content__block'] }>
+
+                        <div className={ styles.burger }>
+                            <BurgerMenu/>
+                        </div>
+
                         <HomePage id='home'/>
                         <MySkillsPage id='skills'/>
                         <AboutPage id='about'/>
