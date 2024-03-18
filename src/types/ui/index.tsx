@@ -12,3 +12,8 @@ export interface I_InputProps {
     placeholder?: string
     style?: any
 }
+
+export interface I_isActive {
+    isActive: boolean
+    isActiveToggle?: (() => void) | any 
+}
