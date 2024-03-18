@@ -26,9 +26,7 @@
 }
 
 .content__block {
-    width: 100%;
-    margin-bottom: 100px;
-    background: bisque;
+
 }
 .content__block--active {
     filter: blur(6px);

@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     background: bisque;
+    width: 100%;
+    margin-bottom: 100px;
 }
 .main__container {
     margin-top: 200px;
