@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     background: bisque;
-    border-bottom: 5px solid black;
 }
 
 .main__container {

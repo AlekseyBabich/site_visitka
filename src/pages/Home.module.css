@@ -14,8 +14,11 @@
     justify-content: flex-end;
 }
 
-.burger {
+.burger_button {
 
+}
+.burger_menu {
+    
 }
 
 .content {
@@ -23,9 +26,10 @@
 }
 
 .content__block {
-    width: 100%;
-    margin-bottom: 100px;
-    background: bisque;
+
+}
+.content__block--active {
+    filter: blur(6px);
 }
 
 .content_block-img {

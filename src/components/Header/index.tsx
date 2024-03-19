@@ -6,12 +6,25 @@ import { TelegramSvg } from "../SvgComponents/TelegramSvg";
 import { VkSvg } from "../SvgComponents/VkSvg";
 import { WhatsappSvg } from "../SvgComponents/WhatsappSvg";
 import { useRouter } from "next/navigation";
+import { I_isActive } from '../../types/ui';
 
-export const Header = () => {
+export const Header = ({ isActive }: I_isActive) => {
     const router = useRouter()
 
+    const handleClick = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+          console.log('work')
+
+        }
+      };
+
     return (
-        <div className={ styles.container }>
+        <div className={ !isActive 
+            ? styles.container
+            : styles['container_active']
+        }>
             <div className={ styles['main__container'] }>
                 <div className={ styles.header }>
 

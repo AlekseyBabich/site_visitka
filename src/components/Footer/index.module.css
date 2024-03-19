@@ -3,8 +3,19 @@
 .container {
     display: flex;
     justify-content: center;
-    background: rgb(252, 217, 175);
     height: 400px;
+    width: 100%;
+    background: rgb(252, 217, 175);
+    z-index: 999;
+}
+.container_active {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    filter: blur(6px);
+    z-index: 998;
+    background: rgb(252, 217, 175);
 }
 
 .main__container {

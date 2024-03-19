@@ -8,12 +8,16 @@ import {VkSvg} from "../SvgComponents/VkSvg";
 import {WhatsappSvg} from "../SvgComponents/WhatsappSvg";
 import Button from "../UI/CustomButton";
 import CustomButton from "../UI/CustomButton";
+import { I_isActive } from '../../types/ui';
 
-export const Footer = () => {
+export const Footer = ({isActive}: I_isActive) => {
     const router = useRouter()
 
     return (
-        <div className={styles.container}>
+        <div className={ !isActive 
+            ? styles.container
+            : styles['container_active']
+        }>
             <div className={styles['main__container']}>
                 <div className={styles.footer}>
 
