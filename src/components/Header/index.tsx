@@ -7,18 +7,12 @@ import { VkSvg } from "../SvgComponents/VkSvg";
 import { WhatsappSvg } from "../SvgComponents/WhatsappSvg";
 import { useRouter } from "next/navigation";
 import { I_isActive } from '../../types/ui';
+import ScrollIntoView from 'react-scroll-into-view'
+
 
 export const Header = ({ isActive }: I_isActive) => {
     const router = useRouter()
 
-    const handleClick = (id: string) => {
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-          console.log('work')
-
-        }
-      };
 
     return (
         <div className={ !isActive 
@@ -28,28 +22,35 @@ export const Header = ({ isActive }: I_isActive) => {
             <div className={ styles['main__container'] }>
                 <div className={ styles.header }>
 
-                    <div className={ styles['header__avatar'] }
-                         onClick={ () => router.push('/') }
-                    >
-                        <Image src={ require('../../image/ava.jpg') } alt={ '' } width={ 100 } height={ 100 }/>
-                        <div className={ styles['header__avatar__title'] }>
-                            <p className={ styles['header__avatar__title--first-symbol'] }>VV</p>
-                            <p className={ styles['header__avatar__title--name'] }>eb development</p>
+                    <ScrollIntoView selector='#home' >
+                        <div className={ styles['header__avatar'] }>
+                            <Image src={ require('../../image/ava.jpg') } alt={ '' } width={ 100 } height={ 100 }/>
+                            <div className={ styles['header__avatar__title'] }>
+                                <p className={ styles['header__avatar__title--first-symbol'] }>VV</p>
+                                <p className={ styles['header__avatar__title--name'] }>eb development</p>
+                            </div>
                         </div>
-                    </div>
+                    </ScrollIntoView>
+
 
                     <div className={ styles['header__links'] }>
                         <div className={ styles['header__links--item'] }>
-                            <Link href='#skills'>Skills</Link>
+                            <ScrollIntoView selector='#skills' >
+                                <a>Skills</a>
+                            </ScrollIntoView>
                         </div>
                         <div className={ styles['header__links--item'] }>
-                            <Link href={ '#about' }>About</Link>
+                            <ScrollIntoView selector='#about' >
+                                <a>About</a>
+                            </ScrollIntoView>
                         </div>
                         {/* <div className={ styles['header__links--item'] }>
                             <Link href={ '/' }>Portfolio</Link>
                         </div> */}
                         <div className={ styles['header__links--item'] }>
-                            <Link href={ '#contacts' }>Contacts</Link>
+                            <ScrollIntoView selector='#contacts' >
+                                <a>Contacts</a>
+                            </ScrollIntoView>
                         </div>
                     </div>
 
