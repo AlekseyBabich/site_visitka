@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './index.module.css'
 import Image from "next/image";
 import CustomButton from "../../UI/CustomButton/index";
+import ScrollIntoView from 'react-scroll-into-view'
+
 
 export const HomePage = ({id}: any) => {
     return (
@@ -26,11 +28,13 @@ export const HomePage = ({id}: any) => {
                                 and required tasts</p>
                         </div>
                         <div className={ styles['content__body__button'] }>
-                            <CustomButton name={'Hire me'}
-                                          height={70}
-                                          width={160}
-                                          path={'/contacts'}
-                            />
+                            <ScrollIntoView selector='#contacts' >
+                                <CustomButton name={'Hire me'}
+                                              height={70}
+                                              width={160}
+                                              path={'/contacts'}
+                                />
+                            </ScrollIntoView>
                         </div>
                     </div>
                 </div>

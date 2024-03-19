@@ -9,6 +9,7 @@ import {WhatsappSvg} from "../SvgComponents/WhatsappSvg";
 import Button from "../UI/CustomButton";
 import CustomButton from "../UI/CustomButton";
 import { I_isActive } from '../../types/ui';
+import AvatarLogo from '../UI/AvatarLogo';
 
 export const Footer = ({isActive}: I_isActive) => {
     const router = useRouter()
@@ -22,15 +23,7 @@ export const Footer = ({isActive}: I_isActive) => {
                 <div className={styles.footer}>
 
                     <div className={styles['footer__wrapper']}>
-                        <div className={styles['footer__avatar']}
-                             onClick={() => router.push('/')}
-                        >
-                            <Image src={require('../../image/ava.jpg')} alt={''} width={100} height={100}/>
-                            <div className={styles['footer__avatar__title']}>
-                                <p className={styles['footer__avatar__title--first-symbol']}>VV</p>
-                                <p className={styles['footer__avatar__title--name']}>eb development</p>
-                            </div>
-                        </div>
+                        <AvatarLogo/>
 
 
                         <div className={styles['footer__contacts--phone']}>

@@ -8,6 +8,7 @@ import { WhatsappSvg } from "../SvgComponents/WhatsappSvg";
 import { useRouter } from "next/navigation";
 import { I_isActive } from '../../types/ui';
 import ScrollIntoView from 'react-scroll-into-view'
+import AvatarLogo from '../UI/AvatarLogo';
 
 
 export const Header = ({ isActive }: I_isActive) => {
@@ -22,15 +23,7 @@ export const Header = ({ isActive }: I_isActive) => {
             <div className={ styles['main__container'] }>
                 <div className={ styles.header }>
 
-                    <ScrollIntoView selector='#home' >
-                        <div className={ styles['header__avatar'] }>
-                            <Image src={ require('../../image/ava.jpg') } alt={ '' } width={ 100 } height={ 100 }/>
-                            <div className={ styles['header__avatar__title'] }>
-                                <p className={ styles['header__avatar__title--first-symbol'] }>VV</p>
-                                <p className={ styles['header__avatar__title--name'] }>eb development</p>
-                            </div>
-                        </div>
-                    </ScrollIntoView>
+                    <AvatarLogo />
 
 
                     <div className={ styles['header__links'] }>
