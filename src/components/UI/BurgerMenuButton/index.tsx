@@ -3,17 +3,17 @@ import React, { useState } from 'react';
 import styles from './index.module.css'
 import { BurgerSvg } from '../../SvgComponents/BurgerSvg';
 
-import { I_isActive } from '../../../types/ui';
+import { I_isActiveBM } from '../../../types/ui';
 
 
-const BurgerMenuButton = ({isActive, isActiveToggle}: I_isActive) => {
+const BurgerMenuButton = ({isActiveBM, isActiveToggleBM}: I_isActiveBM) => {
 
     
 
     return (
-        <div className={ isActive ? styles['container_active'] : styles.container }>
+        <div className={ isActiveBM ? styles['container_active'] : styles.container }>
             <button className={ styles.button }
-                    onClick={() => isActiveToggle()}
+                    onClick={() => isActiveToggleBM()}
             >
                 <div>
                     <BurgerSvg/>

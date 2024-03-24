@@ -13,7 +13,7 @@ export interface I_InputProps {
     style?: any
 }
 
-export interface I_isActive {
-    isActive: boolean
-    isActiveToggle?: (() => void) | any 
+export interface I_isActiveBM {
+    isActiveBM: boolean
+    isActiveToggleBM?: (() => void) | any 
 }

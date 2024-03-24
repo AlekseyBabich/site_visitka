@@ -14,15 +14,15 @@ import { useState } from "react";
 
 export default function Home() {
 
-    const [isActive, setIsActive] = useState(false)
+    const [isActiveBM, setIsActiveBM] = useState(false)
     
-    const handleActive = () => {
-        setIsActive(!isActive)
+    const handleActiveBM = () => {
+        setIsActiveBM(!isActiveBM)
     }
 
-    const handleActiveTwo = () => {
-        if(isActive) {
-            handleActive()
+    const handleActiveTwoBM = () => {
+        if(isActiveBM) {
+            handleActiveBM()
         }
         return;
     }
@@ -32,23 +32,23 @@ export default function Home() {
             <div className={ styles['main__container'] }>
 
                 <div className={ styles.header }>
-                    <Header isActive={isActive}/>
+                    <Header isActiveBM={isActiveBM}/>
                 </div>
 
                 <div className={ styles['burger_button'] }>
-                    <BurgerMenuButton isActiveToggle={handleActive} isActive={isActive}/>
+                    <BurgerMenuButton isActiveToggleBM={handleActiveBM} isActiveBM={isActiveBM}/>
                 </div>
                 <div className={ styles['burger_menu'] }>
-                    <BurgerMenu isActive={isActive}/>
+                    <BurgerMenu isActiveBM={isActiveBM}/>
                 </div>
 
 
                 <div className={ styles.content }>
-                    <div className={ isActive 
+                    <div className={ isActiveBM 
                                         ? styles['content__block--active'] 
                                         : styles['content__block'] 
                                     }
-                                     onClick={() => handleActiveTwo()}
+                                     onClick={() => handleActiveTwoBM()}
                     >
                         <HomePage id='home'/>
                         <MySkillsPage id='skills'/>
@@ -58,7 +58,7 @@ export default function Home() {
                 </div>
 
                 <div className={ styles.footer }>
-                    <Footer isActive={isActive}/>
+                    <Footer isActiveBM={isActiveBM}/>
                 </div>
 
             </div>

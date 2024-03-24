@@ -2,13 +2,13 @@ import React from 'react';
 
 import styles from './index.module.css'
 import { BurgerSvg } from '../../SvgComponents/BurgerSvg';
-import { I_isActive } from '../../../types/ui';
+import { I_isActiveBM } from '../../../types/ui';
 
 
-const BurgerMenu = ({isActive}: I_isActive) => {
+const BurgerMenu = ({isActiveBM}: I_isActiveBM) => {
     
     return (
-        <div className={ !isActive ? styles.container : styles['container_active'] }>
+        <div className={ !isActiveBM ? styles.container : styles['container_active'] }>
             
         </div>
         

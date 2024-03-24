@@ -6,17 +6,17 @@ import { TelegramSvg } from "../SvgComponents/TelegramSvg";
 import { VkSvg } from "../SvgComponents/VkSvg";
 import { WhatsappSvg } from "../SvgComponents/WhatsappSvg";
 import { useRouter } from "next/navigation";
-import { I_isActive } from '../../types/ui';
+import { I_isActiveBM } from '../../types/ui';
 import ScrollIntoView from 'react-scroll-into-view'
 import AvatarLogo from '../UI/AvatarLogo';
 
 
-export const Header = ({ isActive }: I_isActive) => {
+export const Header = ({ isActiveBM }: I_isActiveBM) => {
     const router = useRouter()
 
 
     return (
-        <div className={ !isActive 
+        <div className={ !isActiveBM 
             ? styles.container
             : styles['container_active']
         }>

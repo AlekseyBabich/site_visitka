@@ -8,14 +8,14 @@ import {VkSvg} from "../SvgComponents/VkSvg";
 import {WhatsappSvg} from "../SvgComponents/WhatsappSvg";
 import Button from "../UI/CustomButton";
 import CustomButton from "../UI/CustomButton";
-import { I_isActive } from '../../types/ui';
+import { I_isActiveBM } from '../../types/ui';
 import AvatarLogo from '../UI/AvatarLogo';
 
-export const Footer = ({isActive}: I_isActive) => {
+export const Footer = ({isActiveBM}: I_isActiveBM) => {
     const router = useRouter()
 
     return (
-        <div className={ !isActive 
+        <div className={ !isActiveBM 
             ? styles.container
             : styles['container_active']
         }>
