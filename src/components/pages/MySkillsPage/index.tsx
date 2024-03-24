@@ -1,11 +1,16 @@
 import React from 'react';
+
 import {WebDesignSvg} from "../../../components/SvgComponents/WebDesignSvg";
 import {BackendSvg} from "../../../components/SvgComponents/BackendSvg";
 import {FrontendSvg} from "../../../components/SvgComponents/FrontendSvg";
 import {SeoSvg} from "../../../components/SvgComponents/SeoSvg";
+
 import styles from './index.module.css'
 
-export const MySkillsPage = ({id}: any) => {
+
+
+export const MySkillsPage = ( { id }: any ) => {
+
     const mockCards = [
         {
             path: 'webDesign',
@@ -29,8 +34,8 @@ export const MySkillsPage = ({id}: any) => {
         },
     ]
 
-    const iconSkills: any = (path: any) => {
-        if (path === 'webDesign') {
+    const iconSkills: any = ( path: any ) => {
+        if ( path === 'webDesign' ) {
             return <WebDesignSvg/>
         } else if (path === 'backend') {
             return <BackendSvg/>
@@ -41,22 +46,25 @@ export const MySkillsPage = ({id}: any) => {
         }
     }
 
-
     return (
-        <div id={id} className={styles.container}>
-            <div className={styles['main__container']}>
+        <div id={ id } className={ styles.container }>
+            <div className={ styles [ 'main__container' ] }>
 
-                <div className={styles.content}>
+                <div className={ styles.content }>
                     <h1>My Skills</h1>
-                    <div className={styles['content__cards-block']}>
-                        {mockCards.map((card, index) => (
-                            <div key={index} className={styles['content__card-item']}>
-                                <div className={styles['content__card--image']}>
-                                    {iconSkills(card.path)}
+                    <div className={ styles[ 'content__cards-block' ] }>
+                        {mockCards.map( ( card, index ) => (
+                            <div key={ index } className={ styles[ 'content__card-item' ] }>
+                                <div className={ styles[ 'content__card--image' ] }>
+                                    { iconSkills( card.path ) }
                                 </div>
-                                <div className={styles['content__card__text']}>
-                                    <h2 className={styles['content__card__text--title']}>{card.title}</h2>
-                                    <p className={styles['content__card__text--desc']}>{card.desc}</p>
+                                <div className={ styles[ 'content__card__text' ] }>
+                                    <h2 className={ styles[ 'content__card__text--title' ] }>
+                                        { card.title }
+                                    </h2>
+                                    <p className={ styles[ 'content__card__text--desc' ] }>
+                                        { card.desc }
+                                    </p>
                                 </div>
                             </div>
                         ))}

@@ -1,16 +1,18 @@
 import React from 'react';
-
-import styles from './index.module.css'
 import Link from "next/link";
-import { TelegramSvg } from "../../SvgComponents/TelegramSvg";
-import { VkSvg } from "../../SvgComponents/VkSvg";
-import { WhatsappSvg } from "../../SvgComponents/WhatsappSvg";
 import CustomButton from "../../UI/CustomButton";
 import CustomInput from "../../UI/CustomInput";
 
-export const ContactsPage = ({id}: any) => {
+import { TelegramSvg } from "../../SvgComponents/TelegramSvg";
+import { VkSvg } from "../../SvgComponents/VkSvg";
+import { WhatsappSvg } from "../../SvgComponents/WhatsappSvg";
+
+import styles from './index.module.css'
+
+
+export const ContactsPage = ( { id }: any ) => {
     return (
-        <div id={id} className={ styles.container }>
+        <div id={ id } className={ styles.container }>
             <div className={ styles[ 'main__container' ] }>
 
                 <div className={ styles.title }>
@@ -58,7 +60,7 @@ export const ContactsPage = ({id}: any) => {
                             <CustomButton name={ 'Contact with me' }
                                           width={ 300 }
                                           height={ 70 }
-                                          path={null}
+                                          path={ null }
                             />
                         </div>
                     </div>

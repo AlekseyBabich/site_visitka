@@ -1,3 +1,7 @@
+import { useState } from "react";
+
+import BurgerMenuButton from "../components/UI/BurgerMenuButton";
+import BurgerMenu from "../components/UI/BurgerMenu";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { HomePage } from "../components/pages/HomePage/index";
@@ -6,22 +10,19 @@ import {AboutPage} from "../components/pages/AboutPage";
 import {ContactsPage} from "../components/pages/ContactPage";
 
 import styles from './Home.module.css'
-import BurgerMenuButton from "../components/UI/BurgerMenuButton";
-import BurgerMenu from "../components/UI/BurgerMenu";
-import { useState } from "react";
 
 
 
 export default function Home() {
 
-    const [isActiveBM, setIsActiveBM] = useState(false)
+    const [ isActiveBM, setIsActiveBM ] = useState( false )
     
     const handleActiveBM = () => {
-        setIsActiveBM(!isActiveBM)
+        setIsActiveBM( !isActiveBM )
     }
 
     const handleActiveTwoBM = () => {
-        if(isActiveBM) {
+        if( isActiveBM ) {
             handleActiveBM()
         }
         return;
@@ -29,26 +30,26 @@ export default function Home() {
 
     return (
         <div className={ styles.container }>
-            <div className={ styles['main__container'] }>
+            <div className={ styles[ 'main__container' ] }>
 
                 <div className={ styles.header }>
-                    <Header isActiveBM={isActiveBM}/>
+                    <Header isActiveBM={ isActiveBM }/>
                 </div>
 
-                <div className={ styles['burger_button'] }>
-                    <BurgerMenuButton isActiveToggleBM={handleActiveBM} isActiveBM={isActiveBM}/>
+                <div className={ styles[ 'burger_button' ] }>
+                    <BurgerMenuButton isActiveToggleBM={ handleActiveBM } isActiveBM={ isActiveBM }/>
                 </div>
-                <div className={ styles['burger_menu'] }>
-                    <BurgerMenu isActiveBM={isActiveBM}/>
+                <div className={ styles[ 'burger_menu' ] }>
+                    <BurgerMenu isActiveBM={ isActiveBM }/>
                 </div>
 
 
                 <div className={ styles.content }>
                     <div className={ isActiveBM 
-                                        ? styles['content__block--active'] 
-                                        : styles['content__block'] 
+                                        ? styles[ 'content__block--active' ] 
+                                        : styles[ 'content__block' ] 
                                     }
-                                     onClick={() => handleActiveTwoBM()}
+                                     onClick={ () => handleActiveTwoBM() }
                     >
                         <HomePage id='home'/>
                         <MySkillsPage id='skills'/>
@@ -58,7 +59,7 @@ export default function Home() {
                 </div>
 
                 <div className={ styles.footer }>
-                    <Footer isActiveBM={isActiveBM}/>
+                    <Footer isActiveBM={ isActiveBM }/>
                 </div>
 
             </div>
