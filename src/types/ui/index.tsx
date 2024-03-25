@@ -1,19 +1,19 @@
 export interface I_ButtonProps {
-    name?: string
-    width?: number
-    height?: number
-    path?: string | null
+  name?: string;
+  width?: number;
+  height?: number;
+  path?: string | null;
 }
 
 export interface I_InputProps {
-    type: string
-    width?: number
-    height?: number
-    placeholder?: string
-    style?: any
+  type: string;
+  width?: number;
+  height?: number;
+  placeholder?: string;
+  style?: any;
 }
 
 export interface I_isActiveBM {
-    isActiveBM: boolean
-    isActiveToggleBM?: (() => void) | any 
+  isActiveBM: boolean;
+  isActiveToggleBM?: (() => void) | any;
 }
